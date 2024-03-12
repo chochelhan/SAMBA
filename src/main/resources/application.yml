@@ -1,0 +1,30 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 500MB
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #url: jdbc:mysql://192.168.0.123:3306/sambaai?useSSL=false&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    url: jdbc:mysql://devcs.testpeso.com:13309/sambaai?useSSL=false&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: sambaai
+    password: sambaai@1
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        show_sql: false
+        format_sql: false
+        use_sql_comments: false
+hikari:
+  pool-name: HikariCP
+  maximum-pool-size: 10
+  connection-timeout: 10000
+  validation-timeout: 10000
+  max-lifetime: 580000
+  connection-init-sql: set wait_timeout = 600
+server:
+  port: 8080
+

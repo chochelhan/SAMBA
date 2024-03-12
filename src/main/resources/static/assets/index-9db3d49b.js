@@ -1,0 +1,1 @@
+import{A as t}from"./auth-eef4144a.js";import{_ as r,r as n,o as s,j as _}from"./index-e96a63ea.js";import"./urls-04ad3523.js";const c={data(){return{}},created(){if(!t.getSession().memberInfo){this.$router.push("/");return}}};function a(e,p,i,m,d,u){const o=n("RouterView");return s(),_(o)}const x=r(c,[["render",a],["__scopeId","data-v-2b4eb627"]]);export{x as default};

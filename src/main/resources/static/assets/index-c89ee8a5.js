@@ -1,0 +1,1 @@
+import{_ as o,r as n,o as t,j as r}from"./index-e96a63ea.js";const c={name:"commentContentIndex"};function s(a,_,p,m,i,d){const e=n("RouterView");return t(),r(e)}const u=o(c,[["render",s]]);export{u as default};
